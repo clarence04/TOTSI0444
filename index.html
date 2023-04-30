@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<body>
+  <!-- header main section -->
+  <div class="header">
+    <nav>
+      <h1 class="logo">TOTSI</h1>
+      <div class="nav-links">
+        <ul id="MenuItems">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about-me.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <img src="20210322_211248.png" alt="" class="menu" onclick="menutoggle()">
+      </div>
+    </nav>
+    <!-- 2 colums -->
+    <div class="row">
+      <div class="left-col">
+        <img src="" alt="" style="transform: scaleX(-1);">
+        <h1>Hi I'm Derick Clarence Echon <br> future Web Developer</h1>
+        <p>Ginawa koto website kasi bored ako dito sa bahay gagawa lang dati kasi gusto ko mag IT dahil cool sila and malaki sahod kaya naispired ako pero hindi ko pa sure kung magiging future IT ako.</p>
+      </div>
+      <div class="right-col">
+        <img src="20210322_211248.png">
+        <div class="down">
+            <footer>
+                <p>Author: Derick Clarence Echon</p>
+                <p><a href="e">echonclarence.ecom</a></p>
+              </footer>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    var MenuItems = document.getElementById("MenuItems");
+
+    MenuItems.style.maxHeight = "200px";
+
+    function menutoggle(){
+      if(MenuItems.style.maxHeight == "0px")
+      {
+        MenuItems.style.maxHeight = "200px"
+      }
+      else
+      {
+        MenuItems.style.maxHeight = "0px"
+      }
+    }
+
+  </script>
+</body>
+</html>
